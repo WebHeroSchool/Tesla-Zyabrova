@@ -48,6 +48,7 @@
             Добро пожаловать в будущее!
         </h2>
         <img class="main__img" src="./img/Tesla logo + car.png" alt="logo">
+        <div class="main__container">
             <div class="main__row">
                 <img class="main__img-vector" src="./img/Vector.svg" alt="vector">
                 <p class="main__row-time">
@@ -72,13 +73,14 @@
                     ТЕСТ-ДРАЙВ
                 </p>
             </div>
-        </div>
-        <button class="main__button button">
-            ЗАКАЗАТЬ
-        </button>
-        <div class="main__arrow">
-            <img src="./img/arrow.svg" alt="Arrow" class="main__img-arrow">
-        </div>
+            <button class="main__button button">
+                ЗАКАЗАТЬ
+            </button>
+            <div class="main__arrow">
+                <img src="./img/arrow.svg" alt="Arrow" class="main__img-arrow">
+            </div>
+        </div>   
+        
     </section>
 
     <section class="container">
@@ -86,47 +88,48 @@
             Model S
         </h1>
         <aside class="container__aside">
-            <h2 class="container__aside-title title-second">
+            <h2 class="container__aside-title ">
                 Будущее вождения
             </h2>
-            <p class="container__aside-info">
+            <p class="container__aside-info title-second title-second_white">
                 Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
             </p>
             <div class="container__box">
                 <img src="./img/screen.svg" alt="screen" class="container__img-screen">
-                <p class="container__box-screen container__box-screen_up">
-                    17 <span class="span__box-screen">дюймов</span>
+                <p class="container__box-screen">
+                    17 <span class="container__box-subtex">дюймов</span>
                 </p>
-                <p class="container__box-screen container__box-screen_down">
+                <p class="container__box-desc">
                     Большой дисплей
                 </p>
             </div>
             <div class="container__box">
                 <img src="./img/wifi.svg" alt="wifi" class="container__img-wifi">
-                <p class="container__box-wifi container__box-wifi_up">
+                <p class="container__box-update">
                     Беспроводное обновление ПО
                 </p>
-                <p class="container__box-wifi container__box-wifi_down">
+                <p class="container__box-functionality">
                     Повышенная функциональность
                 </p>
             </div>
             <div class="container__box">
                 <img src="./img/bag.svg" alt="bag" class="container__img-bag">
-                <p class="container__box-bag container__box-bag_up">
+                <p class="container__box-liters">
                     894 литра
                 </p>
-                <p class="container__box-bag container__box-bag_down">
+                <p class="container__box-volume">
                     Объем грузового пространства
                 </p>
             </div>     
             <div class="box-about">
-                <img src="./img/ellipsee.svg" alt="ellipse" class="img__ellipse">
-                <div class="container__box-ellipse-learn">
-                    <a class="cintainer__box-ellipse_link" href="#">
+                
+                <div class="box-about__item">
+                   <img src="./img/ellipsee.svg" alt="ellipse" class="aox-about__img-ellipse"> 
+                   <a class="box-about__link" href="#">
                         УЗНАТЬ БОЛЬШЕ
                     </a>
                 </div>
-                <button class="container__box-button button">
+                <button class="box-about__button button">
                     ЗАКАЗАТЬ
                 </button>
             </div>
@@ -141,84 +144,88 @@
             <p class="footer__aside-info">
                 Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
             </p>
-            <h2 class="footer__aside-mark title-second">
-                Оценка защиты:
-            </h2>
             
-                <div class="footer__box ">
-                    <p class="footer__box-front footer__box-front_white">
+            <div class="wrapper">
+                <h2 class="footer__aside-mark title-second">
+                Оценка защиты:
+                </h2>
+            
+                <div class="footer__box">
+                    <p class="footer__box-name">
                         СПЕРЕДИ
                     </p> 
                     <div class="footer__box-stars footer__box-stars_front">
-                        <img class="front__img-star" src="./img/Star.svg" alt="star1">
-                        <img class="front__img-star" src="./img/Star.svg" alt="star2">
-                        <img class="front__img-star" src="./img/Star.svg" alt="star3">
-                        <img class="fromt__img-star" src="./img/Star.svg" alt="star4">
-                        <img class="front__img-star" src="./img/Star.svg" alt="star5">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star1">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star2">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star3">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star4">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star5">
                     </div>
                 </div>
             
                 <div class="footer__box">
-                    <p class="footer_box-side footer__box-side_white">
+                    <p class="footer_box-name">
                         СБОКУ
                     </p> 
-                     <div class="footer__box-stars footer__box-stars_side">
-                        <img class="side__img-star" src="./img/Star.svg" alt="star1">
-                        <img class="side__img-star" src="./img/Star.svg" alt="star2">
-                        <img class="side__img-star" src="./img/Star.svg" alt="star3">
-                        <img class="side__img-star" src="./img/Star.svg" alt="star4">
-                        <img class="side__img-star" src="./img/Star.svg" alt="star5">
+                     <div class="footer__box-stars">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star1">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star2">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star3">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star4">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star5">
                     </div>
                 </div>
             
                 <div class="footer__box">
-                    <p class="footer__box-side-second footer__box-side-second_up">
+                    <p class="footer__box-name">
                         СБОКУ
                     </p> 
-                    <p class="footer__box-side-second footer__box-side-second_down">
+                    <p class="footer__box-rack">
                         (СТОЙКА)
                     </p>
-                     <div class="footer__box-stars footer__box-stars_side-second">
-                        <img class="second__img-star" src="./img/Star.svg" alt="star1">
-                        <img class="second__img-star" src="./img/Star.svg" alt="star2">
-                        <img class="second__img-star" src="./img/Star.svg" alt="star3">
-                        <img class="second__img-star" src="./img/Star.svg" alt="star4">
-                        <img class="second__img-star" src="./img/Star.svg" alt="star5">
+                     <div class="footer__box-stars">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star1">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star2">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star3">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star4">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star5">
                     </div>
                 </div> 
              
                 <div class="footer__box">
-                   <p class="footer__box-driver footer__box-driver_white">
+                   <p class="footer__box-name">
                        ВОДИТЕЛЬ
                     </p> 
-                    <div class="footer__box-stars footer__box-stars_driver">
-                        <img class="driver__img-star" src="./img/Star.svg" alt="star1">
-                        <img class="driver__img-star" src="./img/Star.svg" alt="star2">
-                        <img class="driver__img-star" src="./img/Star.svg" alt="star3">
-                        <img class="driver__img-star" src="./img/Star.svg" alt="star4">
-                        <img class="driver__img-star" src="./img/Star.svg" alt="star5">
+                    <div class="footer__box-stars">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star1">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star2">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star3">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star4">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star5">
                     </div>
                 </div>
             
                 <div class="footer__box">
-                   <p class="footer__box-passenger footer__box-passenger_white">
+                   <p class="footer__box-name">
                         ПАССАЖИР
                    </p> 
-                     <div class="footer__box-stars footer__box-stars_passengers">
-                        <img class="passengers__img-star" src="./img/Star.svg" alt="star1">
-                        <img class="passengers__img-star" src="./img/Star.svg" alt="star2">
-                        <img class="passengers__img-star" src="./img/Star.svg" alt="star3">
-                        <img class="passengers__img-star" src="./img/Star.svg" alt="star4">
-                        <img class="passengers__img-star" src="./img/Star.svg" alt="star5">
+                     <div class="footer__box-stars">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star1">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star2">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star3">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star4">
+                        <img class="box__stars-img" src="./img/Star.svg" alt="star5">
                     </div>
                 </div>
+            </div>
+            
         
             <div class="aside__safe">
                 <img class="aside__img-safe" src="./img/safe.svg" alt="safe">
                 <p class="aside__safe-stars">
                     5 звезд
                 </p>
-                <p class="aside__safe-safe">
+                <p class="aside__safe-defense">
                     безопасности
                 </p>
             </div>
@@ -239,21 +246,21 @@
                 Model S
             </h1>
             <img class="section__img-car" src="./img/Car frame.png" alt="Car frame">
-            <div class="footer__section-note">
+            <div class="footer__section-front">
                 <img src="./img/note1.svg" alt="note1" class="section__img-front">
-                <div class="section-note__safe-front">
+                <div class="section-front__safe">
                     Защита от удара спереди
                 </div>
             </div>
-            <div class="footer__section-note">
+            <div class="footer__section-side">
                 <img src="./img/note2.svg" alt="note2" class="section__img-side">
-                <div class="section-note__safe-side">
+                <div class="section-side__safe">
                     Защита от удара сбоку
                 </div>
             </div>
-            <div class="footer__section-note">
+            <div class="footer__section-risk">
                 <img src="./img/note3.svg" alt="note3" class="section__img-risk">
-                <div class="section-note__risk">
+                <div class="section-risk__crash">
                     Минимальный риск перевернуться в аварии
                 </div>
             </div>
