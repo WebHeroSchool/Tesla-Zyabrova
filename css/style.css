@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: Montserrat;
+  font-family: Montserrat sans-serif;
   font-style: normal;
   max-width: 1514px;
 }
@@ -224,7 +224,7 @@ body {
 }
 
 .main__button {
-  color: #E51937;
+  color: #e51937;
   background-color: white;
   position: absolute;
   text-align: center;
