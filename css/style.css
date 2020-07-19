@@ -52,7 +52,6 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-
 @media (max-width: 1024px) {
   .nav__link {
     display: none;
@@ -250,7 +249,7 @@ body {
     margin: 0 30px;
     justify-content: center;
   }
-  
+
   .button {
     margin: 0;
     justify-content: center;
