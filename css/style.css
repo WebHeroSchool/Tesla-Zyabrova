@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  padding: 24px 60px 0 42.72px;
+  margin: 24px 60px 0 42.72px;
   width: 100%;
   top: 0;
   left: 0;
@@ -31,14 +31,12 @@ body {
 
 .header__logo {
   display: inline-flex;
-  margin-top: 24px;
   margin-left: 42.72px;
 }
 
 .header__nav {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
   align-items: flex-end;
 }
 
@@ -52,8 +50,8 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-@media (max-width: 1024px) {
-  .nav__link {
+@media (max-width: 1100px) {
+  .header__nav {
     display: none;
   }
 }
@@ -69,7 +67,7 @@ body {
 .header__img-burger {
   display: inline-flex;
   align-items: flex-end;
-  margin: 42px 60px 0 30px;
+  margin: 0 60px 0 30px;
 }
 
 .main__img {
@@ -111,11 +109,21 @@ body {
   justify-content: space-between;
 }
 
+.main__container-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__container-second {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main__row {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  margin-right: 5px;
+  margin-right: 20px;
   justify-content: space-between;
 }
 
@@ -163,7 +171,7 @@ body {
 
 .main__row-test {
   display: flex;
-  margin-top: 23px 40px;
+  margin-right: 10px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -220,6 +228,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    margin: 0;
+  }
+
   .main {
     padding: 90px 0 30px;
   }
@@ -241,7 +253,17 @@ body {
   .main__container {
     flex-direction: column;
     margin: 0 30px;
+    padding: 0 140.37px;
     justify-content: center;
+  }
+
+  .main__row {
+    margin-right: 67.79px;
+    margin-bottom: 57px;
+  }
+
+  .main__row-test {
+    margin-right: 34.51px;
   }
 
   .button {
@@ -281,11 +303,24 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header {
+    margin: 0;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__burger {
+    margin: 0;
+  }
+
   .main {
     padding-top: 30px;
   }
 
   .main__title {
+    margin-top: 30px;
     font-size: 60px;
     margin-bottom: 5px;
     padding: 0;
@@ -306,7 +341,17 @@ body {
   .main__container {
     flex-direction: column;
     margin: 0 10px;
+    padding: 0 36px;
     justify-content: center;
+  }
+
+  .main__row {
+    margin-right: 42.08px;
+    margin-bottom: 43px;
+  }
+
+  .main__row-test {
+    margin-right: 25px;
   }
 
   .button {
@@ -343,4 +388,8 @@ body {
     font-size: 12px;
     text-align: left;
   }
+}
+
+.section__img-car {
+  width: 200px;
 }
