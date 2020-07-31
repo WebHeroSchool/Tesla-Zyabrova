@@ -34,21 +34,24 @@ body {
 
 .header__nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-end;
+  margin-left: 110px;
 }
 
 .header__right {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-end;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
+  margin-right: 0;
 }
 
 .nav__link {
+  white-space: nowrap;
   font-weight: 600;
   font-size: 15px;
   color: #000;
@@ -58,7 +61,7 @@ body {
   border-bottom: 2px solid transparent;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .header__nav, .header__right {
     display: none;
   }
@@ -75,7 +78,7 @@ body {
 .header__img-burger {
   display: inline-flex;
   align-items: flex-end;
-  margin: 0 60px 10px 30px;
+  margin: 0 60px 0 30px;
 }
 
 .main__img {
@@ -89,7 +92,7 @@ body {
   font-weight: 600;
   font-size: 90px;
   text-align: center;
-  margin-top: 133px;
+  margin-top: 74px;
   margin-bottom: 9px;
 }
 
@@ -261,7 +264,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .header {
     margin: 24px 33px 0 15.32px;
   }
@@ -271,7 +274,7 @@ body {
   }
 
   .main__title {
-    margin-top: 155.32px;
+    margin-top: 80.32px;
     margin-bottom: 5px;
     padding: 0;
     justify-content: center;
@@ -373,7 +376,7 @@ body {
   }
 
   .main__title {
-    margin-top: 77px;
+    margin-top: 30px;
     font-size: 60px;
     margin-bottom: 5px;
     padding: 0;
@@ -457,9 +460,7 @@ body {
 }
 
 /* .container {
-  max-width: 1548px;
   max-height: 900px;
-  background-image: url(../img/container.png);
 }
 
 .container__title {
@@ -475,25 +476,54 @@ body {
   display: flex;
 }
 
-/* .container__img {
+.container__img {
   display: inline-block;
-  float: left;
-  width: 1275px;
-  height: 844px;
+  width: 100%;
   left: -275px;
   top: 956px;
-} */
+}
 
 .container__aside {
   display: flex;
   position: relative;
   flex-direction: column;
   max-height: 900px;
-  width: 440px;
+  min-width: 440px;
   background-color: #e51937;
+  margin-left: -270px;
+  padding: 51px 44px 63px 48px;
 }
 
+.title {
+  position: relative;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.title-second {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.container__aside-info {
+  margin-top: 11px;
+  text-align: left;
+}
+
+.title-second_white {
+  color: #fff;
+}
+
+.container__box {
+  display: flex;
+  margin-top: 54px;
+} */
 
 .section__img-car {
   width: 200px;
-}  */
+}
