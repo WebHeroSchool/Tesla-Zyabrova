@@ -115,11 +115,11 @@ body {
 .main__container {
   display: flex;
   margin: 20px 0;
-  padding: 0 321px;
+  padding: 0 250px;
   margin-top: 27px;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .main__container-first {
