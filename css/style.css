@@ -78,7 +78,7 @@ body {
 .header__img-burger {
   display: inline-flex;
   align-items: flex-end;
-  margin: 0 60px 0 30px;
+  margin-right: 60px;
 }
 
 .main__img {
