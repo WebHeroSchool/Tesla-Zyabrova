@@ -90,7 +90,7 @@ body {
 .main {
   position: relative;
   text-align: center;
-  background: url(../img/Tesla\ logo\ +\ car.png) no-repeat;
+  background: url(../img/tesla_logo_car.png) no-repeat;
   background-size: contain;
   margin-top: 134px;
 }
@@ -578,8 +578,7 @@ body {
 .container__img {
   display: inline-block;
   width: 100%;
-  left: -275px;
-  top: 956px;
+  margin-top: -121px;
 }
 
 .container__aside {
@@ -590,7 +589,8 @@ body {
   min-width: 440px;
   background-color: #e51937;
   margin-left: -270px;
-  padding: 51px 44px 63px 48px;
+  margin-top: -151px;
+  padding: 26px 51px 0px 48px;
 }
 
 .title {
@@ -610,7 +610,7 @@ body {
 }
 
 .container__aside-info {
-  margin-top: 11px;
+  margin-top: -11px;
   text-align: left;
 }
 
@@ -618,9 +618,13 @@ body {
   color: #fff;
 }
 
+.container__boxes {
+  margin-top: 54px;
+}
+
 .container__box {
   display: flex;
-  margin-top: 54px;
+  margin-bottom: 30px;
 } */
 
 .section__img-car {
