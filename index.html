@@ -118,41 +118,49 @@
             <div class="container__boxes">
                 <div class="container__box">
                     <img src="./img/screen.svg" alt="screen" class="container__img-screen">
-                    <p class="container__box-title">
-                        17 <span class="box-title__subtitle">дюймов</span>
-                    </p>
-                    <p class="container__box-desc">
-                        Большой дисплей
-                    </p>
+                    <div class="box-info">
+                        <p class="container__box-title">
+                            17 <span class="box-title__subtitle">дюймов</span>
+                        </p>
+                        <p class="container__box-desc">
+                            Большой дисплей
+                        </p>
+                    </div>
                 </div>
                 <div class="container__box">
                     <img src="./img/wifi.svg" alt="wifi" class="container__img-wifi">
-                    <p class="container__box-update">
-                        Беспроводное обновление ПО
-                    </p>
-                    <p class="container__box-functionality">
-                        Повышенная функциональность
-                    </p>
+                    <div>
+                        <p class="container__box-update">
+                            Беспроводное обновление ПО
+                        </p>
+                        <p class="container__box-functionality">
+                            Повышенная функциональность
+                        </p>
+                    </div>
                 </div>
                 <div class="container__box">
                     <img src="./img/bag.svg" alt="bag" class="container__img-bag">
-                    <p class="container__box-title">
-                        894 <span class="box-title__subtitle">литра</span> 
-                    </p>
-                    <p class="container__box-desc">
-                        Объем грузового пространства
-                    </p>
+                    <div class="box-bag">
+                        <p class="container__box-title">
+                            894 <span class="box-title__subtitle">литра</span> 
+                        </p>
+                        <p class="container__box-desc">
+                            Объем грузового пространства
+                        </p>
+                    </div>
                 </div>
             </div>
                  
             <div class="box-about">
-                <a class="box-about__link" href="#">
-                    <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
-                    <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
-                </a>
-                <button class="box-about__button button">
-                    ЗАКАЗАТЬ
-                </button>
+                <div class="box-about__container">
+                    <a class="box-about__link" href="#">
+                        <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
+                        <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
+                    </a>
+                    <button class="box-about__button button">
+                        ЗАКАЗАТЬ
+                    </button>
+                </div>
             </div>
         </aside>
         </div>
@@ -186,7 +194,7 @@
                 </div>
             
                 <div class="wrapper__box">
-                    <p class="wrapper_box-name">
+                    <p class="wrapper__box-name">
                         СБОКУ
                     </p> 
                      <div class="wrapper__box-stars">
@@ -241,15 +249,17 @@
             
             <div class="aside__safe">
                 <img class="aside__img-safe" src="./img/safe.svg" alt="safe">
-                <p class="aside__safe-stars">
-                    5 звезд
-                </p>
-                <p class="aside__safe-defense">
-                    безопасности
-                </p>
+                <div class="safe__about">
+                    <p class="aside__safe-stars">
+                        5 звезд
+                    </p>
+                    <p class="aside__safe-defense">
+                        безопасности
+                    </p>
+                </div>
             </div>
 
-            <div class="box-about">
+            <div class="box-about__footer box-about">
                 <a class="box-about__link" href="#">
                     <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
                     <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
@@ -264,14 +274,15 @@
             <h1 class="footer__section-title">
                 Model S
             </h1>
-            <img class="section__img-car" src="./img/car-frame.png" alt="Car frame">
+            <img class="section__img-car" src="./img/footer-img.png" alt="Car frame">
             <div class="footer__dev">
-                <div class="footer__dev-box">
+                <img class="footer__img-whs" src="./img/whs.png" alt="whs">
+                <!-- <div class="footer__dev-box">
                     <p class="footer-box__text">
                         РАЗРАБОТАНО В 
                     </p>
                     <img src="./img/Маленький желто-белый-svg.svg" alt="WHS" class="footer__img-whs">
-                </div>
+                </div> -->
             </div>
         </section>
     </footer>
