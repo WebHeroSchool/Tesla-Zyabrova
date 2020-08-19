@@ -586,7 +586,6 @@ body {
 .container__aside {
   display: flex;
   flex-direction: column;
-  min-width: 440px;
   background-color: #e51937;
   margin-left: -270px;
   margin-top: -151px;
@@ -737,14 +736,13 @@ body {
 }
 
 .footer {
-  max-width: 900px;
   display: flex;
 }
 
 .footer__aside {
   display: flex;
   flex-direction: column;
-  min-width: 440px;
+  max-width: 440px;
   background-color: #e51937;
   padding: 26px 68px 60px 56px;
 }
@@ -843,21 +841,21 @@ body {
 }
 
 .footer__section-title {
-  display: flex;
+  display: inline-block;
   font-style: normal;
+  position: inherit;
   color: #e51937;
   font-weight: 600;
   font-size: 200px;
   opacity: .1;
-  margin-left: 193px;
+  padding-left: 177px;
   margin-top: 98px;
-  width: 931px;
   z-index: -100;
 }
 
 .section__img-car {
   display: inline-block;
-  width: 95%;
+  width: 105%;
   margin-top: -342px;
   margin-left: -100px;
   z-index: 100;
@@ -879,7 +877,8 @@ body {
   }
 
   .container__title {
-    margin: 70px 0 6px 432px;
+    margin: 70px 46px 6px 0;
+    text-align: right;
   }
 
   .container__content {
@@ -916,7 +915,12 @@ body {
 
   .box-about__container {
     justify-content: center;
-    margin: 0;
+    margin: 0 0 40px 0;
+  }
+
+  .container__aside-info {
+    margin-top: 24px;
+    margin-bottom: 58px;
   }
 
   .box-about__img-ellipse {
@@ -944,12 +948,14 @@ body {
 
   .footer__aside {
     order: 2;
+    max-width: 1300px;
   }
   
   .footer__section-title {
-    margin-left: 85px;
     font-size: 148px;
-    margin-top: 88px;
+    width: 100%;
+    margin: 43px 0 104px 83px;
+    padding: 0;
   }
 
   .section__img-car {
@@ -958,8 +964,8 @@ body {
 
   .section__img-car-ipad {
     display: inline-flex;
-    width: 100%;
-    margin-top: -266px;
+    width: 95%;
+    margin-top: -245px;
   }
 
   .footer-img {
@@ -968,6 +974,7 @@ body {
 
   .footer__aside {
     display: grid;
+    min-width: 0;
     grid-template-rows: 1fr 108px;
     grid-template-columns: 1fr 1fr;
   }
@@ -1007,8 +1014,13 @@ body {
   }
 
   .container__img {
-    margin: -1px 0 149px -37px;
-    width: 133%;
+    margin: -2px 0 85px -40px;
+    width: 111%;
+    height: 337px;
+  }
+
+  .aside-info {
+    margin: -34px -17px 0 -17px;
   }
 
   .container__boxes {
@@ -1021,17 +1033,22 @@ body {
 
   .container__aside {
     display: flex;
-    margin: -190px 0 0 -7px;
+    min-width: 0;
+    margin: -101px 0 0 -7px;
+  }
+
+  .container__aside-info {
+    margin-top: -14px;
   }
 
   .footer__section-title {
-    font-size: 100px;
-    margin: 36px 0 -92px -9px;
+    font-size: 91px;
+    width: 100%;
+    margin: 9px 0 -82px -8px;
   }
 
   .section__img-car-ipad {
-    margin: -0 0 49px 0px;
-    width: 98%;
+    margin: -65px 0 53px 5px;
   }
 
   .wrapper {
@@ -1044,10 +1061,51 @@ body {
 
   .footer__aside {
     display: flex;
-    margin: -56px 0 0 -4px;
+    min-width: 0;
+    margin: -50px 0 0 -17px;
+  }
+
+  .footer__aside-title {
+    margin: 16px -56px 0 11px;
+  }
+
+  .footer__aside-info {
+    margin: 10px -51px 0 11px;
   }
 
   .aside__about {
     margin-top: -32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    display: none;
+  }
+
+  .aside__safe {
+    display: none;
+  }
+
+  .footer__aside {
+    display: flex;
+    min-width: 0;
+  }
+
+  .footer__section-title {
+    font-size: 91px;
+  }
+
+  .container__boxes {
+    display: none;
+  }
+
+  .box-about {
+    display: none;
+  }
+
+  .container__aside {
+    display: flex;
+    min-width: 0;
   }
 }
