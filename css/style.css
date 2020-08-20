@@ -132,6 +132,7 @@ body {
   display: flex;
   margin-top: 510px;
   padding: 0 250px;
+  max-width: 100%;
   align-items: center;
   text-align: center;
   justify-content: space-around;
@@ -583,6 +584,10 @@ body {
   z-index: -1;
 }
 
+.container__img-phone {
+  display: none;
+}
+
 .container__aside {
   display: flex;
   flex-direction: column;
@@ -788,8 +793,9 @@ body {
 }
 
 .wrapper__box-stars {
-  margin-top: -10px;
-  margin-right: -3px;
+  display: inline-flex;
+  margin-top: -20px;
+  margin-right: 4px;
 }
 
 .aside__safe {
@@ -848,15 +854,14 @@ body {
   font-weight: 600;
   font-size: 200px;
   opacity: .1;
-  padding-left: 177px;
-  margin-top: 98px;
+  margin: 100px 0 0 176px;
   z-index: -100;
 }
 
 .section__img-car {
   display: inline-block;
   width: 105%;
-  margin-top: -342px;
+  margin-top: -169px;
   margin-left: -100px;
   z-index: 100;
 }
@@ -868,7 +873,7 @@ body {
 .footer__dev {
   display: flex;
   justify-content: flex-end;
-  margin: 77px 141px 0 0;
+  margin: 77px 18px 0 0;
 }
 
 @media (max-width: 1200px) {
@@ -887,6 +892,10 @@ body {
 
   .container__img {
     margin: -100px 0px 151px 0px;
+  }
+
+  .container__img-phone {
+    display: none;
   }
 
   .container__aside{
@@ -915,7 +924,7 @@ body {
 
   .box-about__container {
     justify-content: center;
-    margin: 0 0 40px 0;
+    margin: 0 64px 40px 0;
   }
 
   .container__aside-info {
@@ -953,9 +962,8 @@ body {
   
   .footer__section-title {
     font-size: 148px;
-    width: 100%;
-    margin: 43px 0 104px 83px;
-    padding: 0;
+    text-align: center;
+    margin: 38px 0 0 75px;
   }
 
   .section__img-car {
@@ -965,7 +973,7 @@ body {
   .section__img-car-ipad {
     display: inline-flex;
     width: 95%;
-    margin-top: -245px;
+    margin-top: -135px;
   }
 
   .footer-img {
@@ -1008,15 +1016,17 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .container__title {
     display: none;
   }
 
   .container__img {
-    margin: -2px 0 85px -40px;
-    width: 111%;
-    height: 337px;
+    display: none;
+  }
+
+  .container__img-phone {
+    display: inline-flex;
   }
 
   .aside-info {
@@ -1034,7 +1044,7 @@ body {
   .container__aside {
     display: flex;
     min-width: 0;
-    margin: -101px 0 0 -7px;
+    margin: -11px 0 0 -7px;
   }
 
   .container__aside-info {
@@ -1078,7 +1088,14 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
+  .main__container {
+    flex-direction: column;
+    padding: 0 36px;
+    justify-content: center;
+    margin-top: 264px;
+  }
+  
   .wrapper {
     display: none;
   }
