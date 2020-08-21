@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tesla_Zyabrova</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/fonts.css">
 </head>
 <body>
     <header class="header">
@@ -28,14 +28,21 @@
                 <a class="nav__link" href="#">
                     Energy
                 </a>
-                <a class="nav__link"href="#">
-                    Магазин
-                </a>
-                <a class="nav__link"href="#">
-                    Войти
-                </a>
             </nav>
-        <img class="header__img-burger" src="./img/Vector.svg" alt="Burger">
+            <nav class="header__right">
+                <div class="right__menu">
+                    <a class="nav__link"href="#">
+                        Магазин
+                    </a>
+                    <a class="nav__link"href="#">
+                        Войти
+                    </a>
+                </div>
+                <button class="burger">
+                <img class="header__img-burger" src="./img/Vector.svg" alt="Burger">
+            </button>
+            </nav>
+            
     </header>
 
     <section class="main">
@@ -45,36 +52,50 @@
         <h2 class="main__description title-second">
             Добро пожаловать в будущее!
         </h2>
-        <img class="main__img" src="./img/Tesla logo + car.png" alt="logo">
+        <!-- <img class="main__img" src="./img/tesla.png" alt="logo"> -->
         <div class="main__container">
-            <div class="main__row">
-                <img class="main__img-vector" src="./img/Vector.svg" alt="vector">
-                <p class="main__row-title">
-                    2,7 <span class="main__subtitle">сек</span>
-                </p>
-                <p class="main__row-decs">
-                    0-100 км/час
-                </p>
+            <div class="main__container-first">
+                <div class="main__row">
+                    <div>
+                        <img class="main__img-vector" src="./img/Speed.svg" alt="vector">
+                        <div class="main__row-title">
+                            2,7 <span class="main__subtitle-time">сек</span>
+                        </div>
+                        <div class="main__row-desc">
+                            0-100 км/час
+                        </div>
+                    </div>
+                </div>
+                <div class="main__row">
+                    <div>
+                        <img class="main__img-stroke" src="./img/Road icon.svg" alt="stroke">
+                        <div class="main__row-title">
+                            632  <span class="main__subtitle-dist">км</span>
+                        </div>
+                        <div class="main__row-desc">
+                            запас хода
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main__row">
-                <img class="main__img-stroke" src="./img/Vector (Stroke).png" alt="stroke">
-                <p class="main__row-title">
-                    632  <span class="main__subtitle">км</span>
-                </p>
-                <p class="man__row-decs">
-                    Запас хода
-                </p>
-            </div>
-            <div class="main__row">
-                <img class="main__img-steering" src="./img/steering-wheel.svg" alt="steering-wheel">
-                <p class="main__row-test">
-                    ТЕСТ-ДРАЙВ
-                </p>
-            </div>
-            <button class="main__button button">
-                ЗАКАЗАТЬ
-            </button>
-        </div>   
+
+            <div class="main__container-second">
+                <div class="main__row-test">
+                    <div class="row__test">
+                        <img class="main__img-steering" src="./img/steering.svg" alt="steering-wheel">
+                        <img class="main__img-steering-1" src="./img/red.svg" alt="red">
+                        <img class="main__img-steering-2" src="./img/red1.svg" alt="red1">
+                        <div class="main__row-text">
+                            ТЕСТ-ДРАЙВ
+                        </div>
+                    </div>
+                </div>
+                <button class="main__button button">
+                    ЗАКАЗАТЬ
+                </button>
+            </div>   
+        </div>
+           
         
         <div class="main__arrow">
                 <img src="./img/arrow.svg" alt="Arrow" class="main__img-arrow">
@@ -85,61 +106,81 @@
         <h1 class="container__title">
             Model S
         </h1>
-        <aside class="container__aside">
-            <h2 class="container__aside-title title">
-                Будущее вождения
-            </h2>
-            <p class="container__aside-info title-second title-second_white">
-                Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
-            </p>
-            <div class="container__box">
-                <img src="./img/screen.svg" alt="screen" class="container__img-screen">
-                <p class="container__box-title">
-                    17 <span class="box-title__subtitle">дюймов</span>
+        <div class="container__content">
+            <img class="container__img" src="./img/container.png" alt="car">
+            <img src="./img/container__img-phone.png" alt="car" class="container__img-phone">
+        <div class="container__aside">
+            <div class="aside-info">
+                <h2 class="container__aside-title title">
+                    Будущее вождения
+                </h2>
+                <p class="container__aside-info title-second title-second_white">
+                    Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
                 </p>
-                <p class="container__box-desc">
-                    Большой дисплей
-                </p>
+                </div>
+            <div class="container__boxes">
+                <div class="container__box">
+                    <img src="./img/screen.svg" alt="screen" class="container__img-screen">
+                    <div class="box-info">
+                        <p class="container__box-title">
+                            17 <span class="box-title__subtitle">дюймов</span>
+                        </p>
+                        <p class="container__box-desc">
+                            Большой дисплей
+                        </p>
+                    </div>
+                </div>
+                <div class="container__box">
+                    <img src="./img/wifi.svg" alt="wifi" class="container__img-wifi">
+                    <div>
+                        <p class="container__box-update">
+                            Беспроводное обновление ПО
+                        </p>
+                        <p class="container__box-functionality">
+                            Повышенная функциональность
+                        </p>
+                    </div>
+                </div>
+                <div class="container__box">
+                    <img src="./img/bag.svg" alt="bag" class="container__img-bag">
+                    <div class="box-bag">
+                        <p class="container__box-title">
+                            894 <span class="box-title__subtitle">литра</span> 
+                        </p>
+                        <p class="container__box-desc">
+                            Объем грузового пространства
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="container__box">
-                <img src="./img/wifi.svg" alt="wifi" class="container__img-wifi">
-                <p class="container__box-update">
-                    Беспроводное обновление ПО
-                </p>
-                <p class="container__box-functionality">
-                    Повышенная функциональность
-                </p>
-            </div>
-            <div class="container__box">
-                <img src="./img/bag.svg" alt="bag" class="container__img-bag">
-                <p class="container__box-title">
-                    894 <span class="box-title__subtitle">литра</span> 
-                </p>
-                <p class="container__box-desc">
-                    Объем грузового пространства
-                </p>
-            </div>     
-            
+                 
             <div class="box-about">
-                <a class="box-about__link" href="#">
-                    <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
-                    <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
-                </a>
-                <button class="box-about__button button">
-                    ЗАКАЗАТЬ
-                </button>
+                <div class="box-about__container">
+                    <a class="box-about__link" href="#">
+                        <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
+                        <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
+                    </a>
+                    <button class="box-about__button button">
+                        ЗАКАЗАТЬ
+                    </button>
+                </div>
             </div>
         </aside>
+        </div>
     </section>
 
     <footer class="footer">
+        
+
         <aside class="footer__aside">
-            <h2 class="footer__aside-title title">
-                Самый безопасный автомобиль в мире
-            </h2>
-            <p class="footer__aside-info title-second title-second_white">
-                Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
-            </p>
+            <div class="aside__about">
+                <h2 class="footer__aside-title title">
+                    Самый безопасный автомобиль в мире
+                </h2>
+                <p class="footer__aside-info title-second title-second_white">
+                    Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
+                </p>
+            </div>
             
             <div class="wrapper">
                 <h2 class="wrapper-mark title">
@@ -160,7 +201,7 @@
                 </div>
             
                 <div class="wrapper__box">
-                    <p class="wrapper_box-name">
+                    <p class="wrapper__box-name">
                         СБОКУ
                     </p> 
                      <div class="wrapper__box-stars">
@@ -215,37 +256,38 @@
             
             <div class="aside__safe">
                 <img class="aside__img-safe" src="./img/safe.svg" alt="safe">
-                <p class="aside__safe-stars">
-                    5 звезд
-                </p>
-                <p class="aside__safe-defense">
-                    безопасности
-                </p>
+                <div class="safe__about">
+                    <p class="aside__safe-stars">
+                        5 звезд
+                    </p>
+                    <p class="aside__safe-defense">
+                        безопасности
+                    </p>
+                </div>
             </div>
 
-            <div class="box-about">
-                <a class="box-about__link" href="#">
-                    <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
-                    <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
-                </a>
-                <button class="box-about__button button">
-                    ЗАКАЗАТЬ
-                </button>
+            <div class="box-about__footer box-about">
+                <div class="box-about__footer-one">
+                    <a class="box-about__link" href="#">
+                        <img src="./img/ellipsee.svg" alt="ellipse" class="box-about__img-ellipse">    
+                        <span class="box-about__learn">УЗНАТЬ БОЛЬШЕ</span> 
+                    </a>
+                    <button class="box-about__button button">
+                        ЗАКАЗАТЬ
+                    </button>
+                </div>
+                
             </div>
         </aside>
 
         <section class="footer__section">
-            <h1 class="footer__section-title">
+            <h2 class="footer__section-title">
                 Model S
-            </h1>
-            <img class="section__img-car" src="./img/car-frame.png" alt="Car frame">
+            </h2>
+            <img class="section__img-car" src="./img/footer-img.png" alt="Car frame">
+            <img src="./img/footer__ipad.png" alt="frame" class="section__img-car-ipad">
             <div class="footer__dev">
-                <div class="footer__dev-box">
-                    <p class="footer-box__text">
-                        РАЗРАБОТАНО В 
-                    </p>
-                    <img src="./img/Маленький желто-белый-svg.svg" alt="WHS" class="footer__img-whs">
-                </div>
+                <img class="footer__img-whs" src="./img/whs.png" alt="whs">
             </div>
         </section>
     </footer>
